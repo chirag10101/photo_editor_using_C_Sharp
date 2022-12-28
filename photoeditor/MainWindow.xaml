@@ -1,0 +1,55 @@
+﻿<Window x:Class="photoeditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:photoeditor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800"  >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="300"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Menu Background="{x:Null}" >
+                <MenuItem Height="20" Width="50" Header="File" Background="MediumPurple" BorderThickness="0" >
+                    <MenuItem Header="New"/>
+                    <MenuItem Header="Open"/>
+                    <MenuItem Header="Print"/>
+                    <MenuItem Header="Save"/>
+                    <MenuItem Header="Save As"/>
+                </MenuItem>
+                <MenuItem Height="20" Width="50" Header="Edit" Background="MediumPurple" BorderThickness="0">
+                    <MenuItem Header="Crop"/>
+                    <MenuItem Header="Resize"/>
+                    <MenuItem Header="Rotate"/>
+                </MenuItem>
+                <MenuItem Height="20" Width="50" Header="Effects" Background="MediumPurple" BorderThickness="0">
+                    <MenuItem Header="Watercolor Pencil"/>
+                    <MenuItem Header="Jitter"/>
+                </MenuItem>
+                <MenuItem Height="20" Width="70" Header="Tools" Background="MediumPurple" BorderThickness="0">
+                    <MenuItem Header="Contrast"/>
+                    <MenuItem Header="Brightness"/>
+                    <MenuItem Header="Brushes"/>
+                </MenuItem>
+                <MenuItem Height="20" Width="70" Header="Help" Background="MediumPurple" BorderThickness="0">
+                    <MenuItem Header="How to use"/>
+                    <MenuItem Header="About us"/>
+                </MenuItem>
+            </Menu>
+            
+            <Label Content="Brightness" FontSize="15"/>
+            <Slider x:Name="brightness" Margin="50,10,50,10"></Slider>
+            <Label Content="Contrast" FontSize="15"></Label>
+            <Slider x:Name="Contrast" Margin="50,10,50,10" ></Slider>
+            <Button Content="Rotate 90 Degree Anticlockwise" Padding="5" Margin="100,30,100,10" ></Button>
+            <Button Content="Rotate 90 Degree clockwise" Padding="5" Margin="100,30,100,10" ></Button>
+            <Button Content="Save" Padding="5" Margin="100,30,100,10"></Button>
+        </StackPanel>
+        
+    
+    </Grid>
+
+</Window>
